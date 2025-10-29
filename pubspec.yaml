@@ -74,6 +74,7 @@ flutter:
     - assets/images/illustrations/emotion.png
     - assets/icons/anger.png
     - assets/icons/crying.png
+    - assets/icons/app icon.png
     - assets/fonts/
     - assets/data/
 
@@ -107,18 +108,18 @@ flutter:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/logos/logo.png"
+  image_path: "assets/icons/app icon.png"
   min_sdk_android: 21
   remove_alpha_ios: true
   web:
     generate: true
-    image_path: "assets/images/logos/logo.png"
+    image_path: "assets/icons/app icon.png"
     background_color: "#FAF0F0"
     theme_color: "#FF8B8B"
   windows:
     generate: true
-    image_path: "assets/images/logos/logo.png"
+    image_path: "assets/icons/app icon.png"
     icon_size: 48
   macos:
     generate: true
-    image_path: "assets/images/logos/logo.png"
+    image_path: "assets/icons/app icon.png"
