@@ -1,0 +1,21 @@
+project:
+  name: aldente
+  type: flutter
+  description: A new Flutter project
+
+commands:
+  run: flutter run
+  build: flutter build ios --no-codesign
+  test: flutter test
+  clean: flutter clean
+  get_deps: flutter pub get
+
+paths:
+  source: lib/
+  tests: test/
+  ios: ios/
+  android: android/
+
+frameworks:
+  - flutter
+  - dart

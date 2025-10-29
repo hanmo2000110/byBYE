@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/kimshin/Desktop/aldente/aldente/**)",
+      "Bash(flutter pub:*)",
+      "Bash(pod install:*)",
+      "Bash(flutter build:*)",
+      "Bash(flutter clean:*)",
+      "Bash(mkdir:*)",
+      "Read(//Users/kimshin/Desktop/aldente/**)",
+      "mcp__ide__getDiagnostics",
+      "Bash(flutter packages pub run:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter run:*)",
+      "Bash(timeout:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
