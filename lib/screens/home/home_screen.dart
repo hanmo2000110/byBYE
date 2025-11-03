@@ -3,6 +3,7 @@ import 'dart:async';
 import '../emotion_record/emotion_record_screen.dart';
 import '../emotion_record/grief_guideline_screen.dart';
 import '../archive/archive_screen.dart';
+import '../memorial/memorial_space_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -198,44 +199,61 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
+                    const SizedBox(height: 10),
+                    Center(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MemorialSpaceScreen(),
+                            ),
+                          );
+                        },
+                        child: _buildTopIcon(
+                          iconPath: 'assets/icons/memorial.png',
+                          size: 90,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
               // 타이머 컨트롤 버튼들
               Positioned(
-                bottom: 50,
-                left: 30,
+                bottom: 0,
+                left: 10,
                 child: GestureDetector(
                   onTap: _startTimer,
                   child: Container(
-                    width: 80,
-                    height: 80,
+                    width: 180,
+                    height: 120,
                     color: Colors.transparent,
                   ),
                 ),
               ),
 
               Positioned(
-                bottom: 50,
-                right: 30,
+                bottom: 0,
+                right: 10,
                 child: GestureDetector(
                   onTap: _stopTimer,
                   child: Container(
-                    width: 80,
-                    height: 80,
+                    width: 180,
+                    height: 120,
                     color: Colors.transparent,
                   ),
                 ),
               ),
 
               Positioned(
-                top: 50,
-                right: 30,
+                top: 10,
+                right: 10,
                 child: GestureDetector(
                   onTap: _resetTimer,
                   child: Container(
-                    width: 80,
-                    height: 80,
+                    width: 180,
+                    height: 120,
                     color: Colors.transparent,
                   ),
                 ),

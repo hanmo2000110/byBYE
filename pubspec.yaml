@@ -39,6 +39,7 @@ dependencies:
   provider: ^6.1.2
   shared_preferences: ^2.3.2
   intl: ^0.19.0
+  image_picker: ^1.0.7
 
 dev_dependencies:
   flutter_test:
@@ -73,7 +74,10 @@ flutter:
     - assets/icons/guideline.png
     - assets/images/illustrations/emotion.png
     - assets/icons/anger.png
+    - assets/icons/memorial.png
     - assets/icons/crying.png
+    - assets/icons/heart.png
+    - assets/icons/cancel.png
     - assets/icons/app icon.png
     - assets/fonts/
     - assets/data/

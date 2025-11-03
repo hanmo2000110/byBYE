@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AngerGuidelineScreen extends StatefulWidget {
-  const AngerGuidelineScreen({super.key});
+class NothingGuidelineScreen extends StatefulWidget {
+  const NothingGuidelineScreen({super.key});
 
   @override
-  State<AngerGuidelineScreen> createState() => _AngerGuidelineScreenState();
+  State<NothingGuidelineScreen> createState() => _NothingGuidelineScreenState();
 }
 
-class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
+class _NothingGuidelineScreenState extends State<NothingGuidelineScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                   children: [
                     // 제목
                     const Text(
-                      '이유 모를 분노에\n휩싸일 때가 있나요?',
+                      '아무것도 하기 싫을 때가 있나요?',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
@@ -62,7 +62,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                     // 일러스트레이션
                     Center(
                       child: Image.asset(
-                        'assets/icons/anger.png',
+                        'assets/icons/crying.png',
                         height: 100,
                         width: 76,
                         fit: BoxFit.contain,
@@ -82,7 +82,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '1',
                               title: '감정 이해',
                               content:
-                                  '분노는 상실의 또 다른 얼굴이에요.\n\'왜 이런 일이 내게 생겼을까\'라는 질문 안에는 슬픔과 억울함이 숨어 있습니다.',
+                                  '상실 이후에는 신체적·정서적으로 에너지가 고갈되어,\n평소에 즐겁던 일조차 무의미하게 느껴질 수 있습니다.\n\'아무것도 하기 싫다\'는 회복이 멈춘 것이 아니라, 몸과 마음이 회복을 준비하고 있는 신호입니다.',
                             ),
                             const SizedBox(height: 20),
 
@@ -91,7 +91,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '2',
                               title: '지금 필요한 마음의 동작',
                               content:
-                                  '\'분노가 틀린 감정\'이 아님을 기억하세요.\n다만 그 분노를 표출할 수 있는 안전한 공간이 필요해요.',
+                                  '아무것도 하지 않는 시간도 회복의 일부입니다.\n억지로 일어나려 하지 말고, "나는 지금 쉬고 있다"고 인식해보세요.',
                             ),
                             const SizedBox(height: 20),
 
@@ -100,7 +100,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '3',
                               title: '회복 루틴',
                               content:
-                                  '안전한 분노 표현 연습\n • 감정 기록에 현재 마음을 그대로 써내려가기 (ex. "나는\n   화가 난다…"로 시작)\n • 찢거나, 구겨버리는 행위로 감정의 에너지를 \'끝\'내기\n • 감정이 정리되면, \'진짜 화난 이유\'를 짧게 적기',
+                                  '며칠 후, 아주 작게라도 "이건 해볼까?"라는 생각이 들 때가 올 거예요. 그때가 바로 몸과 마음이 회복을 시작했다는 신호입니다.',
                             ),
                           ],
                         ),

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AngerGuidelineScreen extends StatefulWidget {
-  const AngerGuidelineScreen({super.key});
+class GuiltGuidelineScreen extends StatefulWidget {
+  const GuiltGuidelineScreen({super.key});
 
   @override
-  State<AngerGuidelineScreen> createState() => _AngerGuidelineScreenState();
+  State<GuiltGuidelineScreen> createState() => _GuiltGuidelineScreenState();
 }
 
-class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
+class _GuiltGuidelineScreenState extends State<GuiltGuidelineScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                   children: [
                     // 제목
                     const Text(
-                      '이유 모를 분노에\n휩싸일 때가 있나요?',
+                      '죄책감을 어떻게 해소해야 될지\n모르겠어요',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
@@ -62,7 +62,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                     // 일러스트레이션
                     Center(
                       child: Image.asset(
-                        'assets/icons/anger.png',
+                        'assets/icons/crying.png',
                         height: 100,
                         width: 76,
                         fit: BoxFit.contain,
@@ -82,7 +82,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '1',
                               title: '감정 이해',
                               content:
-                                  '분노는 상실의 또 다른 얼굴이에요.\n\'왜 이런 일이 내게 생겼을까\'라는 질문 안에는 슬픔과 억울함이 숨어 있습니다.',
+                                  '죄책감은 아이를 얼마나 사랑했는지를 보여주는 깊은 감정입니다.\n유산의 원인을 자신에게 돌리려는 마음은, 사실 "그만큼 아이를 지키고 싶었다"는 마음의 다른 표현입니다.',
                             ),
                             const SizedBox(height: 20),
 
@@ -91,7 +91,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '2',
                               title: '지금 필요한 마음의 동작',
                               content:
-                                  '\'분노가 틀린 감정\'이 아님을 기억하세요.\n다만 그 분노를 표출할 수 있는 안전한 공간이 필요해요.',
+                                  '마음이 완전히 믿지 못하더라도 괜찮아요.\n그 문장을 조용히 되뇌는 것부터가 회복의 시작입니다.',
                             ),
                             const SizedBox(height: 20),
 
@@ -100,7 +100,7 @@ class _AngerGuidelineScreenState extends State<AngerGuidelineScreen> {
                               number: '3',
                               title: '회복 루틴',
                               content:
-                                  '안전한 분노 표현 연습\n • 감정 기록에 현재 마음을 그대로 써내려가기 (ex. "나는\n   화가 난다…"로 시작)\n • 찢거나, 구겨버리는 행위로 감정의 에너지를 \'끝\'내기\n • 감정이 정리되면, \'진짜 화난 이유\'를 짧게 적기',
+                                  '죄책감은 사라지는 감정이 아니라, 시간이 지나며 \'사랑의 흔적\'으로 변형됩니다. 어느 날 그 감정을 떠올리며 "그만큼 사랑했었지"라고 말할 수 있게 된다면, 그것이 바로 회복의 순간입니다.',
                             ),
                           ],
                         ),

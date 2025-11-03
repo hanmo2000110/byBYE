@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'crying_guideline_screen.dart';
 import 'anger_guideline_screen.dart';
+import 'nothing_guideline_screen.dart';
+import 'guilt_guideline_screen.dart';
+import 'remember_guideline_screen.dart';
 
 class GriefGuidelineScreen extends StatefulWidget {
   final String currentStage;
@@ -40,7 +43,7 @@ class _GriefGuidelineScreenState extends State<GriefGuidelineScreen> {
     },
     {
       'emoji': '😔',
-      'text': '남편과 대화하고 싶을 때',
+      'text': '앞으로 아이가 떠오를 때',
     },
   ];
 
@@ -124,7 +127,10 @@ class _GriefGuidelineScreenState extends State<GriefGuidelineScreen> {
                             final isSelected = selectedWorry == worry['text'];
                             final isTouchable =
                                 worry['text'] == '문득 생각나서 울컥할 때' ||
-                                    worry['text'] == '이유 모를 분노에 휩싸일 때';
+                                    worry['text'] == '이유 모를 분노에 휩싸일 때' ||
+                                    worry['text'] == '아무것도 하기 싫을 때' ||
+                                    worry['text'] == '죄책감이 들 때' ||
+                                    worry['text'] == '앞으로 아이가 떠오를 때';
                             return Column(
                               children: [
                                 GestureDetector(
@@ -146,6 +152,33 @@ class _GriefGuidelineScreenState extends State<GriefGuidelineScreen> {
                                               MaterialPageRoute(
                                                 builder: (context) =>
                                                     const AngerGuidelineScreen(),
+                                              ),
+                                            );
+                                          } else if (worry['text'] ==
+                                              '아무것도 하기 싫을 때') {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const NothingGuidelineScreen(),
+                                              ),
+                                            );
+                                          } else if (worry['text'] ==
+                                              '죄책감이 들 때') {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const GuiltGuidelineScreen(),
+                                              ),
+                                            );
+                                          } else if (worry['text'] ==
+                                              '앞으로 아이가 떠오를 때') {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const RememberGuidelineScreen(),
                                               ),
                                             );
                                           }

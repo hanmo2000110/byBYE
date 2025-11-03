@@ -112,9 +112,9 @@ class _CryingGuidelineScreenState extends State<CryingGuidelineScreen> {
                       padding: const EdgeInsets.only(left: 50, right: 50),
                       child: Column(
                         children: [
-                          // 충고하기 버튼
+                          // 종료하기 버튼
                           SizedBox(
-                            width: double.infinity,
+                            width: 152,
                             height: 50,
                             child: ElevatedButton(
                               onPressed: () {

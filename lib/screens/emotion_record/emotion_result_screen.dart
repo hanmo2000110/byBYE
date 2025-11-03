@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'grief_guideline_screen.dart';
+import 'emotion_review_screen.dart';
 
 class EmotionResultScreen extends StatefulWidget {
   final List<String>? selectedEmotions;
@@ -174,7 +175,7 @@ class _EmotionResultScreenState extends State<EmotionResultScreen> {
               child: Container(
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height * 0.9,
-                padding: const EdgeInsets.only(top: 30, bottom: 50),
+                padding: const EdgeInsets.only(top: 20, bottom: 50),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(59),
@@ -223,7 +224,7 @@ class _EmotionResultScreenState extends State<EmotionResultScreen> {
                         );
                       }).toList(),
                     ),
-                    const SizedBox(height: 30),
+                    const SizedBox(height: 20),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30),
                       child: Text(
@@ -278,25 +279,44 @@ class _EmotionResultScreenState extends State<EmotionResultScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 8),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(
-                            color: Color(0xFF2C2C2C),
-                            width: 1.0,
+                    const SizedBox(height: 12),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: SizedBox(
+                        width: 300,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => EmotionReviewScreen(
+                                  expressionText: widget.expressionText,
+                                ),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFFF8F8F8),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            elevation: 0,
                           ),
-                        ),
-                      ),
-                      child: Text(
-                        '내가 기록한 감정 다시 읽어보기',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w700,
-                          color: Color(0xFF2C2C2C),
-                          fontFamily: 'Pretendard',
-                          height: 1.0,
+                          child: const Column(
+                            children: [
+                              Text(
+                                '내가 기록한 감정 다시 읽어보기',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(0xFF2C2C2C),
+                                  fontFamily: 'Pretendard',
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
